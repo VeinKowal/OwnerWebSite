@@ -1,0 +1,59 @@
+@import '~@/utils/utils.less';
+
+.container {
+  position: absolute;
+  width: 369px;
+  height: 271px;
+  padding: 28px 18px 10px 28px;
+  cursor: move;
+  .bg('shenyang-demo/background/传感器信息.png');
+
+  .itemContainer {
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    // flex-direction: f;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+
+    .item {
+      display: flex;
+      width: 100%;
+
+      div {
+        margin: 6px 0 0 -8px;
+        color: rgba(84, 242, 225, 100);
+      }
+
+      div:nth-child(odd) {
+        width: 82px;
+        text-align: right;
+        color: #fff;
+      }
+
+      div:nth-child(even) {
+        width: calc(100% - 102px);
+        margin-left: 12px;
+      }
+    }
+
+    .diagram {
+      position: relative;
+      width: 346px !important;
+      height: 172px;
+      margin-top: -16px;
+    }
+
+    .diagramLegend {
+      margin-top: -18px;
+      color: rgba(84, 242, 225, 100);
+      font-size: 1.6667vh;
+      text-align: left;
+      font-family: SourceHanSansSC-regular;
+    }
+  }
+}
